@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[基于Hexo的博客系统]]></title>
+    <url>%2Fblog.github.io%2F2018%2F07%2F04%2F%E5%9F%BA%E4%BA%8Ehexo%E7%9A%84%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%2F</url>
+    <content type="text"><![CDATA[&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;借用官方的说法，Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。我借助于该网站按步骤搭建了现在你们看到的这个博客系统，以后我们写好的博客可以直接发布到这个系统上面去，简单自由，不用受制于其他第三方博客网站的约束。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下面我将搭建的过程简单记录备用。 开始安装软件 Git、Node.js需要安装的软件有：Git、Node.js，我使用的是windos系统，所以这2个软件下载对应windows版本的软件就可以了，然后依次安装。 安装Hexo1、在本地磁盘中建立一个文件夹，并cd到该目录，我选的是E:\blog2、安装hexo命令：npm i -g hexo3、初始化命令：hexo init，执行完成之后，会在该目录下生成很多文件 github上注册账号，创建仓库这里需要注意repository name命名xxxxx.github.io 配置参数，编辑_config.yml1、本地启动参数 2、部署到github参数： 启动和发布1、本地预览启动1hexo clean 1hexo generate 1hexo server 2、发布到github 1hexo clean 1hexo generate 1hexo deploy 结尾以上就是我参考网上的资料，逐渐搭建完成的步骤，大概的步骤就是这样子的，最初的系统肯定很简陋，后续可以上网查找资料完善系统其它配置，比如主题，百度统计、评论等等，所以想着之后再写一篇来记录这个过程。]]></content>
+      <categories>
+        <category>Hexo系列</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fblog.github.io%2F2018%2F06%2F20%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
