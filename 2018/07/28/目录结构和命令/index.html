@@ -86,16 +86,31 @@
 
 
 
-<meta name="description" content="亦余心之所善兮，虽九死其犹未悔">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Guideself">
-<meta property="og:url" content="http://localhost:5000/archives/2018/index.html">
+<meta name="description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;了解下maven的目录结构和几个基础命令、其中包含的maven的依赖管理等等内容用红色字体标注的部分不在本篇讲述，会单独起篇说明。 开始pom.xmlpom.xml是maven工程的最根本单元，包含了工程的各种重要信息。下面了解下这个文件中的具体信息： 123456789101112131415161718&amp;lt;projec">
+<meta property="og:type" content="article">
+<meta property="og:title" content="目录结构和命令">
+<meta property="og:url" content="http://localhost:5000/2018/07/28/目录结构和命令/index.html">
 <meta property="og:site_name" content="Guideself">
-<meta property="og:description" content="亦余心之所善兮，虽九死其犹未悔">
+<meta property="og:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;了解下maven的目录结构和几个基础命令、其中包含的maven的依赖管理等等内容用红色字体标注的部分不在本篇讲述，会单独起篇说明。 开始pom.xmlpom.xml是maven工程的最根本单元，包含了工程的各种重要信息。下面了解下这个文件中的具体信息： 123456789101112131415161718&amp;lt;projec">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://i.imgur.com/ZNR47vF.png">
+<meta property="og:image" content="https://i.imgur.com/BNmQ8dX.png">
+<meta property="og:image" content="https://i.imgur.com/XK0KOAg.png">
+<meta property="og:image" content="https://i.imgur.com/mnfUdxq.png">
+<meta property="og:image" content="https://i.imgur.com/cw5k8De.png">
+<meta property="og:image" content="https://i.imgur.com/4WcRtfP.png">
+<meta property="og:image" content="https://i.imgur.com/XNYuYVL.png">
+<meta property="og:image" content="https://i.imgur.com/lppVHup.png">
+<meta property="og:image" content="https://i.imgur.com/PO7Qe0P.png">
+<meta property="og:image" content="https://i.imgur.com/1lPAnZk.png">
+<meta property="og:image" content="https://i.imgur.com/cbZJtdn.png">
+<meta property="og:image" content="https://i.imgur.com/g3Lea3j.png">
+<meta property="og:image" content="https://i.imgur.com/FJwB9lP.png">
+<meta property="og:updated_time" content="2018-07-29T10:38:24.831Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Guideself">
-<meta name="twitter:description" content="亦余心之所善兮，虽九死其犹未悔">
+<meta name="twitter:title" content="目录结构和命令">
+<meta name="twitter:description" content="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;了解下maven的目录结构和几个基础命令、其中包含的maven的依赖管理等等内容用红色字体标注的部分不在本篇讲述，会单独起篇说明。 开始pom.xmlpom.xml是maven工程的最根本单元，包含了工程的各种重要信息。下面了解下这个文件中的具体信息： 123456789101112131415161718&amp;lt;projec">
+<meta name="twitter:image" content="https://i.imgur.com/ZNR47vF.png">
 
 
 
@@ -125,13 +140,13 @@
 
 
 
-  <link rel="canonical" href="http://localhost:5000/archives/2018/"/>
+  <link rel="canonical" href="http://localhost:5000/2018/07/28/目录结构和命令/"/>
 
 
 
 
 
-  <title>归档 | Guideself</title>
+  <title>目录结构和命令 | Guideself</title>
   
 
 
@@ -160,7 +175,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 <a href="https://github.com/guideself" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -278,222 +293,250 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/blog.github.io/2018/07/28/目录结构和命令/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="心之所善兮">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/blog.github.io/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Guideself">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">目录结构和命令</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-28T16:57:49+08:00">
+                2018-07-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 5 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/blog.github.io/categories/maven指南/" itemprop="url" rel="index">
+                    <span itemprop="name">maven指南</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2018">2018</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog.github.io/2018/07/28/目录结构和命令/" itemprop="url">
-              
-                <span itemprop="name">目录结构和命令</span>
-              
-            </a>
-        
-      </h2>
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-28T16:57:49+08:00"
-              content="2018-07-28" >
-          07-28
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog.github.io/2018/07/28/2018书单/" itemprop="url">
-              
-                <span itemprop="name">2018书单</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-28T16:33:17+08:00"
-              content="2018-07-28" >
-          07-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
+      
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;了解下maven的目录结构和几个基础命令、其中包含的maven的依赖管理等等内容用红色字体标注的部分不在本篇讲述，会单独起篇说明。</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="pom-xml"><a href="#pom-xml" class="headerlink" title="pom.xml"></a>pom.xml</h3><p>pom.xml是maven工程的最根本单元，包含了工程的各种重要信息。下面了解下这个文件中的具体信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">  xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;</span><br><span class="line">  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line">  &lt;groupId&gt;com.mycompany.app&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;my-app&lt;/artifactId&gt;</span><br><span class="line">  &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line">  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">  &lt;name&gt;my-app&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.apache.org&lt;/url&gt;</span><br><span class="line">  &lt;dependencies&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">  &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">  &lt;version&gt;3.8.1&lt;/version&gt;</span><br><span class="line">  &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">  &lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+<p>参数说明：<br>project         pom.xml文件的最上层节点<br>modelVersion  pom对象的版本，一般不会变化<br>groupId        组织id，一般使用组织域名<br>artifactId     标记工程id,特别是在生成jar时，名称是artifactId-version.jar</p>
+<p>packaging   打包方式，取值为jar,war,ear，不指定的时候默认是jar;项目的指定打包可以在自定义构建生命周期中发挥作用<br>version     版本，命名一般是版本数-SNAPSHOT或者版本数-RELEASE；前者表示处于开发版，后者是发行的正式版<br>name    项目的名称，会在生成的maven文档中体现<br>url    表示项目可以访问的网址，会在生成的maven文档中体现<br>description  项目的基本描述，会在生成的maven文档中体现<br>其他更详细的配置说明可以参考官方说明：<br><a href="http://maven.apache.org/ref/3.5.4/maven-model/maven.html" target="_blank" rel="noopener">http://maven.apache.org/ref/3.5.4/maven-model/maven.html</a></p>
+<h3 id="标准目录结构："><a href="#标准目录结构：" class="headerlink" title="标准目录结构："></a>标准目录结构：</h3><p>除了上面的pom.xml文件外，maven还有其他目录文件：<br>完整展示如下：<br><img src="https://i.imgur.com/ZNR47vF.png" alt=""></p>
+<p>可能大家通过eclipse，新增maven工程，不会有这么多目录结构，这是我手动建立的，右键项目，在属性中<br><img src="https://i.imgur.com/BNmQ8dX.png" alt=""><br>建立完成后，可以对这些目录排序，<br><img src="https://i.imgur.com/XK0KOAg.png" alt=""></p>
+<h3 id="命令执行过程："><a href="#命令执行过程：" class="headerlink" title="命令执行过程："></a>命令执行过程：</h3><p>目录建立了，程序也写好了，接下来如何编译呢？我们都知道编译的是java文件成class文件，那么这些编译好的class文件放在哪里呢？这个地方是可以配置的，<br><img src="https://i.imgur.com/mnfUdxq.png" alt=""></p>
+<p>清理命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/cw5k8De.png" alt=""><br>清理命令，做了扫描该路径下的工程，发现了my-app 1.0-release.jar，调用清理插件maven-clean-plugin来清理掉target下的所有文件</p>
+<p>编译命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn compile</span><br></pre></td></tr></table></figure></p>
+<p>执行编译命令前，需要指定下编码方式，不设置编译的时候会有警告信息。因为编译的时候会调用相关插件来拷贝资源文件，编译文件，这些是需要指定编码方式的。这里配置下编码就解决了：<br><img src="https://i.imgur.com/4WcRtfP.png" alt=""></p>
+<p>设定好编码后，调用编译命令：<br><img src="https://i.imgur.com/XNYuYVL.png" alt=""><br>可以看到编译的过程，也是调用了2个插件来实现的。编译后的输出目录在target下面；这个过程在第一次执行的时候会花费时间来下载插件和依赖包文件。</p>
+<p>测试命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn test</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/lppVHup.png" alt=""><br>会执行编译和运行测试类</p>
+<p>仅仅编译测试，不执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn test-compile</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/PO7Qe0P.png" alt=""></p>
+<p>打包命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/1lPAnZk.png" alt=""><br>做了拷贝main、编译main、拷贝test、编译test下文件、执行测试类、生成jar文件<br>一般而言我们使用的都不会编译test,所以会执行下面的命令跳过测试目录<br><img src="https://i.imgur.com/cbZJtdn.png" alt=""></p>
+<p>安装打包好的jar到本地资源库命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn install</span><br></pre></td></tr></table></figure></p>
+<p>这个命令会做package命令做的所有动作之外，还会将这个jar放到本地资源库中。<br><img src="https://i.imgur.com/g3Lea3j.png" alt=""><br><img src="https://i.imgur.com/FJwB9lP.png" alt=""></p>
+<p>还有其他命令：生成站点信息的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn site</span><br></pre></td></tr></table></figure></p>
+<h3 id="插件："><a href="#插件：" class="headerlink" title="插件："></a>插件：</h3><p>上面这些命令执行的时候，都是调用的插件，具体有哪些插件，插件的作用，可以参考官网<br>地址：<a href="http://maven.apache.org/plugins/" target="_blank" rel="noopener">http://maven.apache.org/plugins/</a></p>
+<font color="red">插件如何配置，怎么自定义插件等等，在这里不做介绍，另起篇幅介绍</font>
 
-        
-        
+<h3 id="编译的生命周期"><a href="#编译的生命周期" class="headerlink" title="编译的生命周期"></a>编译的生命周期</h3><font color="red">本次也不做介绍，另起篇幅介绍</font>
 
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog.github.io/2018/07/22/maven安装和配置/" itemprop="url">
-              
-                <span itemprop="name">maven安装和配置</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-22T16:33:40+08:00"
-              content="2018-07-22" >
-          07-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+<h3 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h3><font color="red">本次也不做介绍，另起篇幅介绍</font>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog.github.io/2018/07/04/基于hexo的博客系统/" itemprop="url">
-              
-                <span itemprop="name">基于Hexo的博客系统</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-07-04T20:43:43+08:00"
-              content="2018-07-04" >
-          07-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/blog.github.io/2018/06/20/hello-world/" itemprop="url">
-              
-                <span itemprop="name">Hello World</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-20T00:10:15+08:00"
-              content="2018-06-20" >
-          06-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/blog.github.io/images/wechatpay.jpg" alt="心之所善兮 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/blog.github.io/images/alipay.jpg" alt="心之所善兮 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/blog.github.io/2018/07/28/2018书单/" rel="next" title="2018书单">
+                <i class="fa fa-chevron-left"></i> 2018书单
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+<span class="jiathis_txt">分享到：</span>
+<a class="jiathis_button_fav">收藏夹</a>
+<a class="jiathis_button_copy">复制网址</a>
+<a class="jiathis_button_email">邮件</a>
+<a class="jiathis_button_weixin">微信</a>
+<a class="jiathis_button_qzone">QQ空间</a>
+<a class="jiathis_button_tqq">腾讯微博</a>
+<a class="jiathis_button_douban">豆瓣</a>
+<a class="jiathis_button_share">一键分享</a>
+
+<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+var jiathis_config={
+  data_track_clickback:true,
+  summary:"",
+  shortUrl:false,
+  hideMore:false
+}
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+      
+    </div>
+  </div>
 
 
           </div>
@@ -501,6 +544,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -521,8 +568,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -577,6 +633,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">1.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#pom-xml"><span class="nav-number">1.1.</span> <span class="nav-text">pom.xml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标准目录结构："><span class="nav-number">1.2.</span> <span class="nav-text">标准目录结构：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#命令执行过程："><span class="nav-number">1.3.</span> <span class="nav-text">命令执行过程：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插件："><span class="nav-number">1.4.</span> <span class="nav-text">插件：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译的生命周期"><span class="nav-number">1.5.</span> <span class="nav-text">编译的生命周期</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#依赖管理"><span class="nav-number">1.6.</span> <span class="nav-text">依赖管理</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -727,6 +799,10 @@
   
 
   
+  <script type="text/javascript" src="/blog.github.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/blog.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
