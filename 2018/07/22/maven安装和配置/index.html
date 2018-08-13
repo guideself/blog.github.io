@@ -372,6 +372,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/blog.github.io/2018/07/22/maven安装和配置/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/blog.github.io/2018/07/22/maven安装和配置/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -530,6 +540,9 @@ var jiathis_config={
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -826,6 +839,28 @@ var jiathis_config={
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'T6WSQvxDtxrXCor4fI4UFcg6-gzGzoHsz',
+        appKey: 'bmpvPvUv7m0NUjD7XIklbr43',
+        placeholder: '联系qq(490685960)',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
