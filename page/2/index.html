@@ -293,7 +293,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://localhost:5000/blog.github.io/2018/07/28/2018书单/">
+    <link itemprop="mainEntityOfPage" href="http://localhost:5000/blog.github.io/2018/07/28/目录结构和命令/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="心之所善兮">
@@ -312,7 +312,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog.github.io/2018/07/28/2018书单/" itemprop="url">2018书单</a></h1>
+                <a class="post-title-link" href="/blog.github.io/2018/07/28/目录结构和命令/" itemprop="url">目录结构和命令</a></h1>
         
 
         <div class="post-meta">
@@ -324,7 +324,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-28T16:33:17+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-28T16:57:49+08:00">
                 2018-07-28
               </time>
             
@@ -347,8 +347,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog.github.io/categories/书吧/" itemprop="url" rel="index">
-                    <span itemprop="name">书吧</span>
+                  <a href="/blog.github.io/categories/maven指南/" itemprop="url" rel="index">
+                    <span itemprop="name">maven指南</span>
                   </a>
                 </span>
 
@@ -365,8 +365,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/blog.github.io/2018/07/28/2018书单/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/blog.github.io/2018/07/28/2018书单/" itemprop="commentCount"></span>
+                <a href="/blog.github.io/2018/07/28/目录结构和命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/blog.github.io/2018/07/28/目录结构和命令/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -396,8 +396,35 @@
       
         
           
-            <p>在这里开书吧，列举每年看过和将要看的书，分享读书体会，以此共勉！</p>
-<ul><br><li>金融的本质</li><br></ul>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;了解下maven的目录结构和几个基础命令、其中包含的maven的依赖管理等等内容用红色字体标注的部分不在本篇讲述，会单独起篇说明。</p>
+<h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><h3 id="pom-xml"><a href="#pom-xml" class="headerlink" title="pom.xml"></a>pom.xml</h3><p>pom.xml是maven工程的最根本单元，包含了工程的各种重要信息。下面了解下这个文件中的具体信息：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span><br><span class="line">  xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd&quot;&gt;</span><br><span class="line">  &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;</span><br><span class="line">  &lt;groupId&gt;com.mycompany.app&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;my-app&lt;/artifactId&gt;</span><br><span class="line">  &lt;packaging&gt;jar&lt;/packaging&gt;</span><br><span class="line">  &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;</span><br><span class="line">  &lt;name&gt;my-app&lt;/name&gt;</span><br><span class="line">  &lt;url&gt;http://maven.apache.org&lt;/url&gt;</span><br><span class="line">  &lt;dependencies&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">  &lt;groupId&gt;junit&lt;/groupId&gt;</span><br><span class="line">  &lt;artifactId&gt;junit&lt;/artifactId&gt;</span><br><span class="line">  &lt;version&gt;3.8.1&lt;/version&gt;</span><br><span class="line">  &lt;scope&gt;test&lt;/scope&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">  &lt;/dependencies&gt;</span><br><span class="line">&lt;/project&gt;</span><br></pre></td></tr></table></figure>
+<p>参数说明：<br>project         pom.xml文件的最上层节点<br>modelVersion  pom对象的版本，一般不会变化<br>groupId        组织id，一般使用组织域名<br>artifactId     标记工程id,特别是在生成jar时，名称是artifactId-version.jar</p>
+<p>packaging   打包方式，取值为jar,war,ear，不指定的时候默认是jar;项目的指定打包可以在自定义构建生命周期中发挥作用<br>version     版本，命名一般是版本数-SNAPSHOT或者版本数-RELEASE；前者表示处于开发版，后者是发行的正式版<br>name    项目的名称，会在生成的maven文档中体现<br>url    表示项目可以访问的网址，会在生成的maven文档中体现<br>description  项目的基本描述，会在生成的maven文档中体现<br>其他更详细的配置说明可以参考官方说明：<br><a href="http://maven.apache.org/ref/3.5.4/maven-model/maven.html" target="_blank" rel="noopener">http://maven.apache.org/ref/3.5.4/maven-model/maven.html</a></p>
+<h3 id="标准目录结构："><a href="#标准目录结构：" class="headerlink" title="标准目录结构："></a>标准目录结构：</h3><p>除了上面的pom.xml文件外，maven还有其他目录文件：<br>完整展示如下：<br><img src="https://i.imgur.com/ZNR47vF.png" alt=""></p>
+<p>可能大家通过eclipse，新增maven工程，不会有这么多目录结构，这是我手动建立的，右键项目，在属性中<br><img src="https://i.imgur.com/BNmQ8dX.png" alt=""><br>建立完成后，可以对这些目录排序，<br><img src="https://i.imgur.com/XK0KOAg.png" alt=""></p>
+<h3 id="命令执行过程："><a href="#命令执行过程：" class="headerlink" title="命令执行过程："></a>命令执行过程：</h3><p>目录建立了，程序也写好了，接下来如何编译呢？我们都知道编译的是java文件成class文件，那么这些编译好的class文件放在哪里呢？这个地方是可以配置的，<br><img src="https://i.imgur.com/mnfUdxq.png" alt=""></p>
+<p>清理命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn clean</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/cw5k8De.png" alt=""><br>清理命令，做了扫描该路径下的工程，发现了my-app 1.0-release.jar，调用清理插件maven-clean-plugin来清理掉target下的所有文件</p>
+<p>编译命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn compile</span><br></pre></td></tr></table></figure></p>
+<p>执行编译命令前，需要指定下编码方式，不设置编译的时候会有警告信息。因为编译的时候会调用相关插件来拷贝资源文件，编译文件，这些是需要指定编码方式的。这里配置下编码就解决了：<br><img src="https://i.imgur.com/4WcRtfP.png" alt=""></p>
+<p>设定好编码后，调用编译命令：<br><img src="https://i.imgur.com/XNYuYVL.png" alt=""><br>可以看到编译的过程，也是调用了2个插件来实现的。编译后的输出目录在target下面；这个过程在第一次执行的时候会花费时间来下载插件和依赖包文件。</p>
+<p>测试命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn test</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/lppVHup.png" alt=""><br>会执行编译和运行测试类</p>
+<p>仅仅编译测试，不执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn test-compile</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/PO7Qe0P.png" alt=""></p>
+<p>打包命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn package</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://i.imgur.com/1lPAnZk.png" alt=""><br>做了拷贝main、编译main、拷贝test、编译test下文件、执行测试类、生成jar文件<br>一般而言我们使用的都不会编译test,所以会执行下面的命令跳过测试目录<br><img src="https://i.imgur.com/cbZJtdn.png" alt=""></p>
+<p>安装打包好的jar到本地资源库命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn install</span><br></pre></td></tr></table></figure></p>
+<p>这个命令会做package命令做的所有动作之外，还会将这个jar放到本地资源库中。<br><img src="https://i.imgur.com/g3Lea3j.png" alt=""><br><img src="https://i.imgur.com/FJwB9lP.png" alt=""></p>
+<p>还有其他命令：生成站点信息的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn site</span><br></pre></td></tr></table></figure></p>
+<h3 id="插件："><a href="#插件：" class="headerlink" title="插件："></a>插件：</h3><p>上面这些命令执行的时候，都是调用的插件，具体有哪些插件，插件的作用，可以参考官网<br>地址：<a href="http://maven.apache.org/plugins/" target="_blank" rel="noopener">http://maven.apache.org/plugins/</a></p>
+<font color="red">插件如何配置，怎么自定义插件等等，在这里不做介绍，另起篇幅介绍</font>
+
+<h3 id="编译的生命周期"><a href="#编译的生命周期" class="headerlink" title="编译的生命周期"></a>编译的生命周期</h3><font color="red">本次也不做介绍，另起篇幅介绍</font>
+
+<h3 id="依赖管理"><a href="#依赖管理" class="headerlink" title="依赖管理"></a>依赖管理</h3><font color="red">本次也不做介绍，另起篇幅介绍</font>
+
           
         
       
@@ -436,7 +463,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/blog.github.io/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog.github.io/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog.github.io/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog.github.io/page/5/">5</a><a class="extend next" rel="next" href="/blog.github.io/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/blog.github.io/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/blog.github.io/">1</a><span class="page-number current">2</span><a class="page-number" href="/blog.github.io/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/blog.github.io/page/6/">6</a><a class="extend next" rel="next" href="/blog.github.io/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -486,7 +513,7 @@
               
                 <a href="/blog.github.io/archives">
               
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -497,7 +524,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/blog.github.io/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
